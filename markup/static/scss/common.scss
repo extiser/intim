@@ -1,0 +1,38 @@
+// Common styles of the project
+
+html,
+body {
+  height: 100%;
+
+  background-color: $purple;
+
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 16px;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 980px;
+  margin: auto;
+}
+
+.btn {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 25px;
+  color: $white;
+  text-align: center;
+  text-decoration: none;
+  &._green {
+    background-color: $green;
+    &:hover {
+      background-color: $green + #111;
+    }
+  }
+  &._red {
+    background-color: $light-red;
+    &:hover {
+      background-color: $light-red + #111;
+    }
+  }
+}
